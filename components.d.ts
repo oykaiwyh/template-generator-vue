@@ -7,12 +7,22 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    ACol: typeof import('ant-design-vue/es')['Col']
+    ALayout: typeof import('ant-design-vue/es')['Layout']
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
+    ALayoutFooter: typeof import('ant-design-vue/es')['LayoutFooter']
+    ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
+    ARow: typeof import('ant-design-vue/es')['Row']
+    Footer: typeof import('./src/components/Layouts/components/Footer/index.vue')['default']
+    Header: typeof import('./src/components/Layouts/components/Header/index.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     IconCommunity: typeof import('./src/components/icons/IconCommunity.vue')['default']
     IconDocumentation: typeof import('./src/components/icons/IconDocumentation.vue')['default']
     IconEcosystem: typeof import('./src/components/icons/IconEcosystem.vue')['default']
     IconSupport: typeof import('./src/components/icons/IconSupport.vue')['default']
     IconTooling: typeof import('./src/components/icons/IconTooling.vue')['default']
+    Layout: (typeof import('./src/components/Layouts/Layout.vue'))['default']
+    Layouts: typeof import('./src/components/Layouts/index.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
